@@ -59,7 +59,4 @@ begin
 	prepare build_table_stmt from @full_build_table;
 	execute build_table_stmt;
 	deallocate prepare build_table_stmt;
-
 end;
-
-call make_shard('orders', 2021);
