@@ -1,4 +1,3 @@
-drop procedure make_shard;
 create procedure make_shard(table_name varchar(255), sharding_year int)
 begin
 	set @db_name = concat(table_name, '_', sharding_year);
